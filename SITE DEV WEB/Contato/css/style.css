@@ -1,0 +1,254 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Branco como fundo principal */
+    color: #000000; /* Preto como cor de texto padrão */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    min-height: 100vh; /* Garante que o conteúdo ocupe toda a altura da tela */
+}
+
+
+/* Banner */
+.banner {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Fundo preto */
+    color: #ffffff;
+}
+
+.banner p {
+    margin: 10px 0;
+}
+
+.banner button {
+    background-color: #FFD700; /* Amarelo para botões */
+    border: none;
+    padding: 10px 20px;
+    color: #000000; /* Texto preto */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.banner button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Seção de sobre */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #ffffff; /* Fundo branco */
+    color: #000000;
+}
+
+.about h1 {
+    font-size: 2.5em;
+    color: #FFD700; /* Amarelo para títulos */
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seção promocional */
+.promo-section {
+    background-color: #000000; /* Fundo preto */
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+}
+
+.promo-section h2 {
+    color: #FFD700; /* Amarelo para títulos */
+    font-size: 2em;
+}
+
+.promo-section p {
+    margin: 10px 0;
+}
+
+.promo-section button {
+    background-color: #FFD700; /* Amarelo para botões */
+    border: none;
+    padding: 10px 20px;
+    color: #ffffff; /* Texto preto */
+    font-weight: bold;
+    cursor: pointer;
+}
+        
+.promo-section button:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Formulário */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    max-width: 500px; /* Limita a largura do formulário */
+    background-color: #ffffff; /* Fundo preto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin: 20px auto;
+}
+
+/* Estilo do formulário */
+form {
+    background-color: #000000; /* Fundo preto */
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px; /* Limita a largura do formulário */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #ffffff; /* Texto branco */
+    border-bottom: #FFD700;
+}
+
+form label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+    color: #ffffff; /* Amarelo */
+}
+
+form input[type="text"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 15px;
+    border: 3x solid #FFd700; /* Amarelo */
+    border-radius: 4px;
+    background-color: #ffffff; /* Fundo branco */
+    color: #000000; /* Texto preto */
+}
+
+form input::placeholder {
+    color: grey;
+}
+
+.note {
+    font-size: 0.9em;
+    color: #ffffff; /* Amarelo para o texto de nota */
+    margin-bottom: 15px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #FFD700; /* Amarelo */
+    border: none;
+    color: #000000; /* Texto preto */
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+form button:hover {
+    background-color: #ffffff; /* Fundo branco ao passar o mouse */
+    color: #000000;
+    border: 1px solid #FFD700; /* Amarelo */
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #FFD700; /* Fundo amarelo */
+    color: #000000; /* Texto preto */
+    font-size: 0.9em;
+    width: 100%;
+}
+
+/* --------------------------- */
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+  
+}
+.navbar .logo img {
+    width: 120px;
+    height: 100px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+.navbar .logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar .logo .fit {
+    color: #f7b600;
+}
+.navbar .menu {
+    display: flex;
+    align-items: center;
+}
+.navbar .menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+.navbar .menu .button {
+    background-color: #f7b600;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.navbar .menu .icon {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #333;
+}
+/* Animando navbar */
+@keyframes redhover {
+    0%{
+        border-bottom: 1px solid #f7b600;
+    }
+    50%{
+        border-bottom: 2px solid #f7b600;
+    }
+    100%{
+        border-bottom: 3px solid #f7b600;
+    }
+}
+.navbar .menu a :hover {
+    animation: redhover 1s linear;
+} 
+/* ------------ */
+

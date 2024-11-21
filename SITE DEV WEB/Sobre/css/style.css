@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white;
+    
+}
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+.navbar .logo img {
+    width: 120px;
+    height: 100px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+.navbar .logo span {
+    font-size: 24px;
+    font-weight: bold;
+}
+.navbar .logo .fit {
+    color: #f7b600;
+}
+.navbar .menu {
+    display: flex;
+    align-items: center;
+    
+}
+.navbar .menu a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+.navbar .menu .button {
+    background-color: #f7b600;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.navbar .menu .icon {
+    font-size: 24px;
+    margin-left: 20px;
+    color: #333;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.text-content {
+    width: 60%;
+}
+.text-content p {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.quote {
+    border-left: 3px solid black;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.image-content {
+    width: 35%;
+}
+.image-content img {
+    width: 100%;
+    border-radius: 10px;
+}
+.yellow-section {
+    background-color: #ffc107;
+    padding: 20px;
+    margin-top: 20px;
+}
+.yellow-section p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: black;
+}
+.yellow-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5em;
+}
+/* Responsividade para o menu */
+.menu.active {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+}
+
+.menu .icon {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu .icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text-content, .image-content {
+        width: 100%;
+    }
+
+    .navbar .logo img {
+        width: 100px;
+        height: auto;
+    }
+}
+
+/* Animação para o WhatsApp Icon */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.whatsapp-icon:hover {
+    transform: scale(1.2);
+}
